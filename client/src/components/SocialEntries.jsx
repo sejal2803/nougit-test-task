@@ -77,12 +77,12 @@ export default class SocialEntries extends Component {
 
   renderBadge(entry) {
     let variant, name
-    if (!!entry.status) {
-      variant = 'info'
-      name = 'Task Pending'
-    } else if (entry.isTrending) {
+    if (entry.isTrending) {
       variant = 'danger'
       name = 'Trending'
+    } else if (!!entry.status) {
+      variant = 'info'
+      name = 'Task Pending'
     } else {
       variant = 'success'
       name = 'Task Completed'
