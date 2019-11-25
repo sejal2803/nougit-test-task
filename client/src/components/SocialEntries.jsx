@@ -9,7 +9,6 @@ import Image from 'react-bootstrap/Image'
 import Loader from '../Loader.svg'
 import { FETCH_ENTRIES } from '../queries'
 import FilterNav from './FilterNav'
-import Button from 'react-bootstrap/Button'
 
 export default class SocialEntries extends Component {
   constructor(props) {
