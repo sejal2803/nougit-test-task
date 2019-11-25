@@ -5,11 +5,13 @@ const db = require('./config/db')
 const schema = require('./schema')
 const resolver = require('./resolver')
 const Utils = require('./utils')
+const cors = require('cors')
 
 const app = express()
 
 app.use(
   '/graphql',
+  cors(),
   graphqlHTTP({
     schema: schema,
     rootValue: resolver,
