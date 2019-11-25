@@ -2,3 +2,14 @@
   display: inline-flex;
   padding: 0 190px;
 }
+
+.thumbnail-image {
+  width: inherit;
+  height: 190px;
+}
+
+.text-currency {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+}
